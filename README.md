@@ -74,3 +74,27 @@ the [Terrain](terrain-tiles) and [OpenMapTiles](tiles-omt) demos were provided b
 The font PBFs were generated using the scripts and source fonts from https://github.com/openmaptiles/fonts.
 
 The debug tiles were provided by [@NathanMOlson](https://github.com/NathanMOlson).
+
+
+## Test
+
+Build image 
+
+```
+docker build -t tile-server .
+```
+
+Run Container
+
+```
+docker run -d -p 8080:80 tile-server
+```
+
+Access File
+
+```
+// username/password: dasiot/dasiot-for-ba_ckend
+http://localhost:8080/tiles
+http://localhost:8080/font
+```
+
