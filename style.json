@@ -7,7 +7,7 @@
         17.65431710431244,
         32.954120326746775
     ],
-    "glyphs": "https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
+    "glyphs": "http://localhost:8080/font/{fontstack}/{range}.pbf",
     "layers": [
         {
             "id": "background",
@@ -537,7 +537,7 @@
     "bearing": 0,
     "sources": {
         "maplibre": {
-            "url": "https://demotiles.maplibre.org/tiles/tiles.json",
+            "url": "http://localhost:8080/tiles/tiles.json",
             "type": "vector"
         },
         "crimea": {
