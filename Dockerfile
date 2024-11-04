@@ -4,12 +4,6 @@ FROM nginx:alpine
 # Install apache2-utils for htpasswd command
 RUN apk add --no-cache apache2-utils
 
-# Create directory for basic auth file
-RUN mkdir -p /etc/nginx/auth
-
-# Create basic auth file (you'll need to change these credentials)
-RUN htpasswd -bc /etc/nginx/auth/.htpasswd dasiot dasiot-for-ba_ckend
-
 # Create directories for tiles
 RUN mkdir -p /usr/share/nginx/html/tiles \
     /usr/share/nginx/html/font \
